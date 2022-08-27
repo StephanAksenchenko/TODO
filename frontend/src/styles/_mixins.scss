@@ -1,0 +1,13 @@
+@import "./vars";
+
+@mixin forTablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin forLaptop {
+  @media (min-width: $laptop) {
+    @content;
+  }
+}
