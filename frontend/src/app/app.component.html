@@ -1,1 +1,10 @@
-<h1>Todo app</h1>
+<main>
+  <h1>Todo app</h1>
+  <app-todo-add-form (onAddTodo)="onAddTodo($event)"></app-todo-add-form>
+
+  <ul>
+    <li *ngFor="let todo of todos">
+      <app-todo-item [title]="todo.title"></app-todo-item>
+    </li>
+  </ul>
+</main>
