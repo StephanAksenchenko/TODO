@@ -14,7 +14,7 @@ grumphp:
             level: 3
             memory_limit: "-1"
         phpcsfixer:
-            config: '.php-cs-fixer'
+            config: '.php-cs-fixer.php'
         phplint:
         composer:
             no_check_lock: true
