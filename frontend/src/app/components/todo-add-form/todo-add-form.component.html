@@ -1,11 +1,15 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <label for="title">Title</label>
-  <input
-    type="text"
-    id="title"
-    placeholder="Enter todo"
-    formControlName="title"
-  />
-
-  <button type="submit">Add</button>
+  <div class="grid">
+    <div class="grid-input">
+      <input
+        type="text"
+        placeholder="Enter todo"
+        formControlName="title"
+        class="input"
+      />
+    </div>
+    <div class="grid-submit">
+      <button type="submit" class="submit">Add</button>
+    </div>
+  </div>
 </form>
